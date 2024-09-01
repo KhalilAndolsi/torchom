@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.line-animate-y{
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: fadeInLineY 0.5s forwards ease-in-out;
+}
+
+@keyframes fadeInLineY {
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.line-animate-x{
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: fadeInLineX 0.5s forwards ease-in-out;
+}
+
+@keyframes fadeInLineX {
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
